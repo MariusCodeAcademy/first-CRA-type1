@@ -1,11 +1,11 @@
 import TopCardImage from './TopCardImage';
 import CardBottomText from './CardBottomText';
 
-function MyPicCard() {
+function MyPicCard(props) {
   return (
     <article className='tour-card'>
       <TopCardImage />
-      <CardBottomText />
+      <CardBottomText town={props.town} />
     </article>
   );
 }
