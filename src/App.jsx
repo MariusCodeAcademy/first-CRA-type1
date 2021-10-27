@@ -1,4 +1,5 @@
 import './App.css';
+import desertImg from './assets/desert.jpg';
 
 const topSecionData = {
   title: 'The band!',
@@ -36,21 +37,21 @@ function App() {
           <h6 className='title title--sub'>Remember to book your tickets</h6>
           <div className='tour-cards-container d-flex justify-around'>
             <article className='tour-card'>
-              <img src='img/desert.jpg' alt='cart' />
+              <img src={desertImg} alt='cart' />
               <p className='title--card'>New York</p>
               <p className='tour__date'>Fri 27 Nov 2016</p>
               <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
               <button className='btn--black'>Buy Tickets</button>
             </article>
             <article className='tour-card'>
-              <img src='img/desert.jpg' alt='cart' />
+              <img src={desertImg} alt='cart' />
               <p className='title--card'>New York</p>
               <p className='tour__date'>Fri 27 Nov 2016</p>
               <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
               <button className='btn--black'>Buy Tickets</button>
             </article>
             <article className='tour-card'>
-              <img src='img/desert.jpg' alt='cart' />
+              <img src={desertImg} alt='cart' />
               <p className='title--card'>New York</p>
               <p className='tour__date'>Fri 27 Nov 2016</p>
               <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
