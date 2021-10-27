@@ -3,6 +3,7 @@ import MyButton from './components/MyButton';
 import BottomCardContainer from './components/BottomCardContainer';
 import BottomSectionHeader from './components/BottomSectionHeader';
 import Tags from './components/Tags';
+import TopSectionHeader from './components/TopSection/TopSectionHeader';
 
 const topSecionData = {
   title: 'The band!',
@@ -16,14 +17,12 @@ function App() {
   return (
     <div className='App'>
       <section className='top container'>
-        <h1 className='title title--main'>{topSecionData.title}</h1>
+        <TopSectionHeader
+          title={topSecionData.title}
+          subTitle={topSecionData.subTitle}
+          body={topSecionData.para}
+        />
 
-        <MyButton text='I am button 1' color='blue' />
-        <MyButton text='I am button 2' />
-        <MyButton text='I am more of a button' color='tomato' />
-
-        <h6 className='title title--sub'>{topSecionData.subTitle}</h6>
-        <p className='text--main'>{topSecionData.para}</p>
         <div className='people-container d-flex justify-around'>
           <article className='people-card'>
             <p>{topSecionData.cardName}</p>
