@@ -70,3 +70,25 @@ img {
 .tour__date {
   color: gray;
 }
+
+/* tags */
+
+.tags .tags__header {
+  background-color: #333;
+  color: snow;
+  padding: 0.1px 0.8rem;
+  margin-top: 1rem;
+}
+.tags .tags-items {
+  border: 1px solid #333;
+  padding: 10px;
+}
+.tags .tags__item {
+  background-color: lightgray;
+  font-size: 0.8rem;
+  padding: 4px;
+}
+.tags .tags__item.tags__item--special {
+  background-color: #333;
+  color: snow;
+}

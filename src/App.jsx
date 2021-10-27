@@ -1,6 +1,8 @@
 import './App.css';
 import MyButton from './components/MyButton';
 import BottomCardContainer from './components/BottomCardContainer';
+import BottomSectionHeader from './components/BottomSectionHeader';
+import Tags from './components/Tags';
 
 const topSecionData = {
   title: 'The band!',
@@ -39,10 +41,22 @@ function App() {
       </section>
       <section className='black'>
         <div className='container'>
-          <h2 className='title--main'>Tour dates</h2>
-          <h6 className='title title--sub'>Remember to book your tickets</h6>
+          <BottomSectionHeader
+            title='Our new dates'
+            subTitle='Book now before its too late'
+          />
           <BottomCardContainer />
+          <BottomSectionHeader title='Thank you' subTitle='See you soon' />
         </div>
+      </section>
+      <section className='extra container'>
+        <Tags
+          tag1='London'
+          tag2='Paris'
+          tag3='Viena'
+          tag4='New York'
+          tagSpecial='Alaska'
+        />
       </section>
     </div>
   );
