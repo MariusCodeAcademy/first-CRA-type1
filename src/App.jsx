@@ -1,7 +1,7 @@
 import './App.css';
 import MyButton from './components/MyButton';
-import BtnBlack from './components/MyBottomCard/BtnBlack';
 import TopCardImage from './components/MyBottomCard/TopCardImage';
+import CardBottomText from './components/MyBottomCard/CardBottomText';
 
 const topSecionData = {
   title: 'The band!',
@@ -11,19 +11,7 @@ const topSecionData = {
   cardImage: 'cart.jpg',
 };
 
-// CardBottomText()
-function CardBottomText() {
-  return (
-    <div>
-      <p className='title--card'>New York</p>
-      <p className='tour__date'>Fri 27 Nov 2016</p>
-      <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-      <BtnBlack />
-    </div>
-  );
-}
-
-// MyPicCard()
+// MyPicCard() in external file
 function MyPicCard() {
   return (
     <article className='tour-card'>
