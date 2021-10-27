@@ -1,7 +1,6 @@
 import './App.css';
 import MyButton from './components/MyButton';
-import TopCardImage from './components/MyBottomCard/TopCardImage';
-import CardBottomText from './components/MyBottomCard/CardBottomText';
+import BottomCardContainer from './components/BottomCardContainer';
 
 const topSecionData = {
   title: 'The band!',
@@ -11,22 +10,16 @@ const topSecionData = {
   cardImage: 'cart.jpg',
 };
 
-// MyPicCard() in external file
-function MyPicCard() {
-  return (
-    <article className='tour-card'>
-      <TopCardImage />
-      <CardBottomText />
-    </article>
-  );
-}
-
 function App() {
   return (
     <div className='App'>
       <section className='top container'>
         <h1 className='title title--main'>{topSecionData.title}</h1>
-        <MyButton />
+
+        <MyButton text='I am button 1' color='blue' />
+        <MyButton text='I am button 2' />
+        <MyButton text='I am more of a button' color='tomato' />
+
         <h6 className='title title--sub'>{topSecionData.subTitle}</h6>
         <p className='text--main'>{topSecionData.para}</p>
         <div className='people-container d-flex justify-around'>
@@ -48,11 +41,7 @@ function App() {
         <div className='container'>
           <h2 className='title--main'>Tour dates</h2>
           <h6 className='title title--sub'>Remember to book your tickets</h6>
-          <div className='tour-cards-container d-flex justify-around'>
-            <MyPicCard />
-            <MyPicCard />
-            <MyPicCard />
-          </div>
+          <BottomCardContainer />
         </div>
       </section>
     </div>
