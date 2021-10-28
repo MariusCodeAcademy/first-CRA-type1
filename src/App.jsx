@@ -1,7 +1,8 @@
 import './App.css';
-import MyButton from './components/MyButton';
+// import MyButton from './components/MyButton';
 import BottomCardContainer from './components/BottomCardContainer';
 import BottomSectionHeader from './components/BottomSectionHeader';
+import MyArticle from './components/MyArticle';
 import Tags from './components/Tags';
 import TopSectionHeader from './components/TopSection/TopSectionHeader';
 
@@ -16,6 +17,11 @@ const topSecionData = {
 function App() {
   return (
     <div className='App'>
+      <MyArticle>
+        <p>This is a text than is my paragraph</p>
+        <h4>Antraste</h4>
+        <button>click me</button>
+      </MyArticle>
       <section className='top container'>
         <TopSectionHeader
           title={topSecionData.title}
