@@ -92,3 +92,9 @@ img {
   background-color: #333;
   color: snow;
 }
+
+.nav-link {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1em 2em;
+}

@@ -1,9 +1,3 @@
-// create nav component with links from array
-{
-  /* <nav>
-  <a href='/' >Home</a>
-</nav> */
-}
 const navData = [
   {
     id: 1,
@@ -21,3 +15,23 @@ const navData = [
     linkText: 'Contact us',
   },
 ];
+
+function NavComponent() {
+  return (
+    <nav>
+      {navData.map((navObj) => (
+        <a key={navObj.id} className='nav-link' href={navObj.to}>
+          {navObj.linkText}
+        </a>
+      ))}
+    </nav>
+  );
+}
+export default NavComponent;
+
+// create nav component with links from array
+// {
+//   /* <nav>
+//   <a href='/' >Home</a>
+// </nav> */
+// }

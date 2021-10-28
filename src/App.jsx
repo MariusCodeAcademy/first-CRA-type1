@@ -3,6 +3,7 @@ import './App.css';
 import BottomCardContainer from './components/BottomCardContainer';
 import BottomSectionHeader from './components/BottomSectionHeader';
 import LoopButton from './components/LoopButton';
+import NavComponent from './components/NavComponent';
 // import MyArticle from './components/MyArticle';
 import Tags from './components/Tags';
 import TopSectionHeader from './components/TopSection/TopSectionHeader';
@@ -20,6 +21,7 @@ function App() {
   const tagsArr = ['Alaska', 'London', 'Paris', 'New York', 'Vilnius'];
   return (
     <div className='App'>
+      <NavComponent />
       {/* <MyArticle>
         <p>This is a text than is my paragraph</p>
         <h4>Antraste</h4>
