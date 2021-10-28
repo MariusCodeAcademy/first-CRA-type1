@@ -2,6 +2,7 @@ import './App.css';
 // import MyButton from './components/MyButton';
 import BottomCardContainer from './components/BottomCardContainer';
 import BottomSectionHeader from './components/BottomSectionHeader';
+import LoopButton from './components/LoopButton';
 // import MyArticle from './components/MyArticle';
 import Tags from './components/Tags';
 import TopSectionHeader from './components/TopSection/TopSectionHeader';
@@ -61,6 +62,7 @@ function App() {
       </section>
       <section className='extra container'>
         <Tags tags={tagsArr} tagSpecial='Alaska' />
+        <LoopButton />
       </section>
     </div>
   );
