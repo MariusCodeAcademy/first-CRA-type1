@@ -1,27 +1,9 @@
-const navData = [
-  {
-    id: 1,
-    to: 'index.html',
-    linkText: 'Home',
-  },
-  {
-    id: 2,
-    to: 'about.html',
-    linkText: 'About',
-  },
-  {
-    id: 3,
-    to: 'contact.html',
-    linkText: 'Contact us',
-  },
-];
-
-function NavComponent() {
+function NavComponent(props) {
   return (
     <nav>
-      {navData.map((navObj) => (
-        <a key={navObj.id} className='nav-link' href={navObj.to}>
-          {navObj.linkText}
+      {props.navDataArr.map(({ id, to, linkText }) => (
+        <a key={id} className='nav-link' href={to}>
+          {linkText}
         </a>
       ))}
     </nav>

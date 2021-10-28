@@ -9,6 +9,41 @@ import Tags from './components/Tags';
 import TopSectionHeader from './components/TopSection/TopSectionHeader';
 // import MyArticleExpresion from './components/MyArticleExpresion';
 
+const navData = [
+  {
+    id: 1,
+    to: 'index.html',
+    linkText: 'Home',
+  },
+  {
+    id: 2,
+    to: 'about.html',
+    linkText: 'About',
+  },
+  {
+    id: 3,
+    to: 'contact.html',
+    linkText: 'Contact us',
+  },
+];
+const navDataFooter = [
+  {
+    id: 1,
+    to: 'index.html',
+    linkText: 'Copyright',
+  },
+  {
+    id: 2,
+    to: 'about.html',
+    linkText: 'Legal notes',
+  },
+  {
+    id: 3,
+    to: 'contact.html',
+    linkText: 'Contact us',
+  },
+];
+
 const topSecionData = {
   title: 'The band!',
   subTitle: 'We love music',
@@ -21,7 +56,7 @@ function App() {
   const tagsArr = ['Alaska', 'London', 'Paris', 'New York', 'Vilnius'];
   return (
     <div className='App'>
-      <NavComponent />
+      <NavComponent navDataArr={navData} />
       {/* <MyArticle>
         <p>This is a text than is my paragraph</p>
         <h4>Antraste</h4>
@@ -66,6 +101,9 @@ function App() {
         <Tags tags={tagsArr} tagSpecial='Alaska' />
         <LoopButton />
       </section>
+      <footer>
+        <NavComponent navDataArr={navDataFooter} />
+      </footer>
     </div>
   );
 }
