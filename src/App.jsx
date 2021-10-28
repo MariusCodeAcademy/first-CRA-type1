@@ -5,6 +5,7 @@ import BottomSectionHeader from './components/BottomSectionHeader';
 import MyArticle from './components/MyArticle';
 import Tags from './components/Tags';
 import TopSectionHeader from './components/TopSection/TopSectionHeader';
+import MyArticleExpresion from './components/MyArticleExpresion';
 
 const topSecionData = {
   title: 'The band!',
@@ -22,6 +23,9 @@ function App() {
         <h4>Antraste</h4>
         <button>click me</button>
       </MyArticle>
+      <MyArticleExpresion title='Exp title'>
+        <p>Express yourself</p>
+      </MyArticleExpresion>
       <section className='top container'>
         <TopSectionHeader
           title={topSecionData.title}
