@@ -8,10 +8,11 @@ function Tags(props) {
         <span className='tags__item tags__item--special'>
           {props.tagSpecial}
         </span>
-        <span className='tags__item'>{props.tag1}</span>
-        <span className='tags__item'>{props.tag2}</span>
-        <span className='tags__item'>{props.tag3}</span>
-        <span className='tags__item'>{props.tag4}</span>
+        {props.tags.map((tag, indx) => (
+          <span key={indx} className='tags__item'>
+            {tag}
+          </span>
+        ))}
       </div>
     </div>
   );

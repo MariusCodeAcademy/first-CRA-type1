@@ -2,10 +2,10 @@ import './App.css';
 // import MyButton from './components/MyButton';
 import BottomCardContainer from './components/BottomCardContainer';
 import BottomSectionHeader from './components/BottomSectionHeader';
-import MyArticle from './components/MyArticle';
+// import MyArticle from './components/MyArticle';
 import Tags from './components/Tags';
 import TopSectionHeader from './components/TopSection/TopSectionHeader';
-import MyArticleExpresion from './components/MyArticleExpresion';
+// import MyArticleExpresion from './components/MyArticleExpresion';
 
 const topSecionData = {
   title: 'The band!',
@@ -16,16 +16,17 @@ const topSecionData = {
 };
 
 function App() {
+  const tagsArr = ['Alaska', 'London', 'Paris', 'New York', 'Vilnius'];
   return (
     <div className='App'>
-      <MyArticle>
+      {/* <MyArticle>
         <p>This is a text than is my paragraph</p>
         <h4>Antraste</h4>
         <button>click me</button>
       </MyArticle>
       <MyArticleExpresion title='Exp title'>
         <p>Express yourself</p>
-      </MyArticleExpresion>
+      </MyArticleExpresion> */}
       <section className='top container'>
         <TopSectionHeader
           title={topSecionData.title}
@@ -59,13 +60,7 @@ function App() {
         </div>
       </section>
       <section className='extra container'>
-        <Tags
-          tag1='London'
-          tag2='Paris'
-          tag3='Viena'
-          tag4='New York'
-          tagSpecial='Alaska'
-        />
+        <Tags tags={tagsArr} tagSpecial='Alaska' />
       </section>
     </div>
   );
